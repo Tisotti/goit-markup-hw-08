@@ -1,0 +1,119 @@
+@import "../utils/flex-placeholder";
+// навигация
+
+.nav-icon {
+    fill: #757575;
+    margin-right: 10px;
+
+    transition: fill 250ms var(--cubic);
+}
+
+// особенности
+.pecu-icon {
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+
+    @extend %flex;
+}
+
+//  наша команда логотіпи соц сетей
+.team-icons {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+}
+
+.team-icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-link-icon {
+    @extend %flex;
+
+    width: 44px;
+    height: 44px;
+
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+
+    transition: background-color 250ms var(--cubic);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+    &:hover .svg-icon,
+    &:focus .svg-icon {
+        fill: var(--primary-white-color);
+    }
+
+}
+
+.team-link-icon {
+    fill: #afb1b8;
+}
+
+
+.svg-icon {
+    transition: fill 250ms var(--cubic);
+}
+
+// постоянний клиенти иконки
+.clients-icon {
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+
+    transition: fill 250ms var(--cubic);
+}
+
+// футер соц сети
+.footer-link-icon {
+  @extend %flex;
+
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: background-color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.footer-icon {
+    fill: var(--primary-white-color);
+    width: 20px;
+    height: 20px;
+}
+
+// футер подписаться
+.subscribe-icon {
+    position: absolute;
+
+    top: 15px;
+    right: 28px;
+
+}
+
+
+
+
+
+
+
+
+
+
+

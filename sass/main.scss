@@ -1,0 +1,35 @@
+// variables - переменние root
+@import "./utils/variables";
+
+// скрить заголовки
+@import "./utils/mixin-border";
+@import "./utils/visually-hidden";
+
+// base style - стили от боди
+@import "./base/normalize";
+@import "./base/base";
+
+// components
+@import "./components/btn";
+@import "./components/container";
+@import "./components/icons";
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/peculiarities";
+@import "./components/discription";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/p-filter";
+@import "./components/p-list";
+@import "./components/p-card";
+@import "./components/footer";
+@import "./components/footer-addres";
+@import "./components/footer-social";
+@import "./components/footer-subscribe";
+
+
+
+
+

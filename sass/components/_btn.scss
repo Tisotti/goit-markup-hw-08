@@ -1,0 +1,126 @@
+@import "../utils/btn-placecholder";
+
+.hero-btn {
+    @extend %btn;
+    padding: 10px 32px;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+   
+    min-width: 200px;
+    text-align: center;
+
+    transition: background-color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+}
+
+// модалка - закрить
+
+.modal__btn__close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    @include border (rgba(0, 0, 0, 0.1));
+    box-sizing: border-box;
+
+    background-color: var(--primary-white-color);
+
+    cursor: pointer;
+
+    &:hover .modal__icon__btn-close,
+    &:focus .modal__icon__btn-close {
+        fill: var(--accent-color);
+    }
+}
+
+
+// модалка - отправить форму
+
+.modal__btn__submit {
+    @extend %btn;
+    padding: 10px 32px;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    min-width: 200px;
+    text-align: center;
+
+    transition: background-color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+
+}
+
+// портфолио - кнопки фильтра
+
+.filter-btn {
+    padding: 6px 22px;
+    border: none;
+    min-width: 73px;
+    max-width: 145px;
+    text-align: center;
+
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--titel-text-color);
+    background-color: #F5F4FA;
+    cursor: pointer;
+    border-radius: 4px;
+
+    transition: background-color 250ms var(--cubic),
+        color 250ms var(--cubic),
+        box-shadow 250ms var(--cubic);
+
+        &:hover,
+        &:focus {
+            color: var(--primary-white-color);
+            background-color: var(--accent-color);
+            cursor: pointer;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+}
+
+// кнопка подписаться в футере 
+.subscribe-btn {
+    @extend %btn;
+    position: relative;
+
+    padding: 10px 29px;
+    margin-right: 0;
+    margin-left: 12px;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+   
+    min-width: 200px;
+
+    transition: background-color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+}
+
+.subscribe-btn-span {
+    display: flex;
+}
+
+

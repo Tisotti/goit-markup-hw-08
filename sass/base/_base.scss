@@ -1,0 +1,34 @@
+@import "./reset";
+
+body {
+    font-family: "Roboto",
+        sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+img {
+    display: block;
+}
+
+/* заголовки h2 */
+.disc-titel,
+.team-titel,
+.clients-titel {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+
+.team-titel,
+.team-name,
+.heading-title,
+.disc-titel,
+.clients-titel {
+    color: var(--titel-text-color);
+}
+    

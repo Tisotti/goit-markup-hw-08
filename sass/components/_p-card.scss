@@ -1,0 +1,105 @@
+@import "../utils/flex-placeholder";
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+    border: #000000;
+}
+
+.project-list {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.project-link {
+    display: block;
+
+    transition: box-shadow 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);        
+    }
+
+    &:hover .product-overlay,
+&:focus .product-overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+&:hover .product-action,
+&:focus .product-action {
+    opacity: 1;
+}
+}
+
+.portfolio-image {
+    margin: 0px;
+}
+
+.project-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(23, 138, 232, 0.9);
+
+    opacity: 0;
+
+    transform: translateY(100%);
+    transition: transform 250ms var(--cubic),
+    opacity 250ms var(--cubic);
+}
+
+.product-action {
+    position: absolute;
+
+    @extend %flex;
+
+    padding: 63px 24px;
+
+    top: 0;
+    left: 0;
+
+    font-Size: 18px;
+    Line-height: 1.55;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-white-color);
+
+    opacity: 0;
+}
+
+
+.container-projects {
+    font-weight: 370px;
+
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+}
+
+.portfolio-title {
+    margin: 0;
+    color: var(--primary-text-color);
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.87;
+}

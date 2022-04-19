@@ -1,0 +1,28 @@
+@import "../utils/flex-placeholder";
+
+.social {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.social-list {
+   @extend %flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.social-item {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
