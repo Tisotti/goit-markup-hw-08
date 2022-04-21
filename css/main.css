@@ -355,7 +355,7 @@ img {
   color: var(--titel-text-color);
 }
 
-.menu-btn .hero-btn, .modal__btn__submit, .subscribe-btn {
+.hero-btn, .modal__btn__submit, .subscribe-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.85;
@@ -369,11 +369,23 @@ img {
   display: inline-flex;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  border: none;
   background-color: transparent;
 }
 
-.menu-btn .hero-btn {
+.menu-btn .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.hero-btn {
   padding: 10px 32px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -382,7 +394,7 @@ img {
   transition: background-color 250ms var(--cubic);
 }
 
-.menu-btn .hero-btn:hover, .menu-btn .hero-btn:focus {
+.hero-btn:hover, .hero-btn:focus {
   background-color: #188ce8;
 }
 
