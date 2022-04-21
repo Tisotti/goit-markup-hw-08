@@ -8,6 +8,28 @@
 ;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.heading-title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -333,29 +355,7 @@ img {
   color: var(--titel-text-color);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.heading-title {
-  margin: 0;
-  margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.hero-btn, .modal__btn__submit, .subscribe-btn {
+.menu-btn .hero-btn, .modal__btn__submit, .subscribe-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.85;
@@ -365,7 +365,15 @@ img {
   cursor: pointer;
 }
 
-.hero-btn {
+.menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+  background-color: transparent;
+}
+
+.menu-btn .hero-btn {
   padding: 10px 32px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -374,7 +382,7 @@ img {
   transition: background-color 250ms var(--cubic);
 }
 
-.hero-btn:hover, .hero-btn:focus {
+.menu-btn .hero-btn:hover, .menu-btn .hero-btn:focus {
   background-color: #188ce8;
 }
 
@@ -455,11 +463,29 @@ img {
 }
 
 .container {
-  width: 1200px;
+  outline: 1px solid red;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .pecu-icon, .team-link-icon, .footer-link-icon, .nav-contacts, .modal__btn__close, .clients-link, .product-action, .social-list {
@@ -556,11 +582,6 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
 /* logo */
 .logo {
   font-family: "Raleway";
@@ -605,6 +626,11 @@ img {
 }
 
 /* навигация */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -921,8 +947,17 @@ img {
   color: var(--titel-text-color);
 }
 
-.peculiarities-list {
-  display: flex;
+@media screen and (min-width: 480px) {
+  .peculiarities-list {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .peculiarities-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .peculiarities-item {
