@@ -2,6 +2,11 @@
 
 /* навигация */
 
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
 .site-nav {
     display: flex;
     margin-left: 93px;
@@ -50,15 +55,11 @@
     }
 }
 
-
-
 .nav-link,
 .logo {
     color: var(--titel-text-color);
     text-decoration: none;
 }
-
-
 
 .nav-contacts {
     @extend %flex;
@@ -81,5 +82,3 @@
         fill: var(--accent-color);
     }
 }
-
-

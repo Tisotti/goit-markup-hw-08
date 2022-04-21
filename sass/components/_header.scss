@@ -3,11 +3,6 @@
     border-bottom: 1px solid #ececec;
 }
 
-.main-nav {
-    display: flex;
-    align-items: center;
-}
-
 /* logo */
 .logo {
     font-family: "Raleway";
@@ -37,19 +32,14 @@
         position: absolute;
         bottom: 0;
         left: 0;
-    
+
         bottom: -1px;
-    
+
         width: 100%;
         height: 4px;
-    
+
         border-radius: 2px;
-    
+
         background-color: var(--accent-color);
     }
 }
-
-    
-
-
-
