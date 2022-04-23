@@ -22,15 +22,21 @@
 
   <body class="body">
     <header class="header">
-      <div class="container main-nav">
+      <div class="container header-nav">
         <nav class="main-nav">
           <a class="logo" href="index.html"
             ><span class="logo-primary">Web</span
             ><span class="logo-secondary">Studio</span></a
           >
 
-          <button class="menu-btn is-open" type="button" data-menu-button>
+          <button
+            class="menu-btn"
+            type="button"
+            aria-expanded="false"
+            data-menu-button
+          >
             <svg
+              class="menu-btn_icon"
               width="40px"
               height="40px"
               aria-label="переключатеть мобильного меню"
@@ -610,6 +616,82 @@
       </div>
     </footer> -->
 
+    <!-- мобильное окно -->
+    <div class="mobile-overlay" data-menu>
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <ul class="mob-nav_list list">
+            <li class="mob-nav_item">
+              <a class="mob-nav_link" href=""></a>Студия
+            </li>
+            <li class="mob-nav_item">
+              <a class="mob-nav_link" href=""></a>Портфолио
+            </li>
+            <li class="mob-nav_item">
+              <a class="mob-nav_link" href=""></a>Контакты
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-contacts">
+          <ul class="mob-contacts_list list">
+            <li class="mob-contacts_item">
+              <a class="mob-contacts_tel link" href="tel:+38 096 111 11 11"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-contacts_item">
+              <a class="mob-contacts_mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-social">
+          <ul class="mob-social_list list">
+            <li class="mob-social_item">
+              <a
+                class="mob-social_link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrel"
+              ></a
+              >Instagram
+            </li>
+            <li class="mob-social_item">
+              <a
+                class="mob-social_link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrel"
+              ></a
+              >Twitter
+            </li>
+            <li class="mob-social_item">
+              <a
+                class="mob-social_link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrel"
+              ></a
+              >Facebook
+            </li>
+            <li class="mob-social_item">
+              <a
+                class="mob-social_link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrel"
+              ></a
+              >LinkedIn
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

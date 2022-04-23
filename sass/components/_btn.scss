@@ -2,25 +2,37 @@
 
 // кнопки меню/закрыть на моб версии
 .menu-btn {
+    position: relative;
+
     display: inline-flex;
     margin: 0;
+    margin-top: 10px;
+    margin-left: auto;
     padding: 0;
+
     border: none;
     background-color: transparent;
- 
+
+    z-index: 99;
+
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .menu-btn .icon-cross {
     display: none;
 }
 
-.menu-button.is-open .icon-cross {
+.menu-btn.is-active .icon-menu {
+    display: none;
+}
+
+.menu-btn.is-active .icon-cross {
     display: block;
 }
 
-.menu-button.is-open .icon-menu {
-    display: none;
-}
 
 .hero-btn {
     @extend %btn;

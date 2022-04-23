@@ -7,15 +7,27 @@
     align-items: center;
 }
 
-.site-nav {
-    display: flex;
-    margin-left: 93px;
+// .header-nav {
+//     display: flex;
+//     align-items: center;
+// }
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    list-style: none;
+
+
+.site-nav {
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        margin-left: 93px;
+        
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        list-style: none;
+    }
+   
 }
 
 .site-nav .item {
@@ -27,13 +39,18 @@
 }
 
 .nav-address {
-    display: flex;
-    margin-left: auto;
+    display: none;
 
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    list-style: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: auto;
+        
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        list-style: none;  
+    }
+
 }
 
 /* дай отступ соседу. при добавлении кнопок не нужно будет редактировать что-то типа last child */

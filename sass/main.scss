@@ -10,20 +10,25 @@
 @import "./base/base";
 
 // components
+@import "./components/mobile-menu";
 @import "./components/btn";
 @import "./components/container";
 @import "./components/icons";
+// studia - header
 @import "./components/header";
 @import "./components/navigation";
+// studia-main
 @import "./components/hero";
 @import "./components/modal";
 @import "./components/peculiarities";
 @import "./components/discription";
 @import "./components/team";
 @import "./components/clients";
+// portfolio
 @import "./components/p-filter";
 @import "./components/p-list";
 @import "./components/p-card";
+// footer
 @import "./components/footer";
 @import "./components/footer-addres";
 @import "./components/footer-social";

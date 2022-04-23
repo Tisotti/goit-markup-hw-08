@@ -1,6 +1,10 @@
 .header {
     background-color: var(--primary-white-color);
-    border-bottom: 1px solid #ececec;
+    
+
+    @media screen and (min-width: 768px) {
+        border-bottom: 1px solid #ececec;
+    }
 }
 
 /* logo */
