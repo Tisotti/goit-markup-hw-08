@@ -60,6 +60,11 @@
     font-size: 34px;
     line-height: 1.176;
     color: var(--accent-color);
+
+    @media screen and (min-width: 320px) {
+        font-size: 28px;
+    }
+        
 }
 
 .mobile-contacts {
@@ -98,4 +103,8 @@
 .mob-social_list {
     display: flex;
 
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+       flex-wrap: wrap;
+    justify-content: center;
+    }
 }
