@@ -886,29 +886,81 @@ img {
   }
 }
 
-.hero {
-  max-width: 1600px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero_bg.jpg);
-  background-repeat: no-repeat;
+@media screen and (min-width: 320px) {
+  .hero {
+    max-width: 1600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero_bg_S.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
-.hero-titel {
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero_bg_S@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .hero {
+    background-image: url(../images/hero_bg_M.jpg);
+  }
+}
+
+@media screen and (min-width: 786px) and (min-device-pixel-ratio: 2), screen and (min-width: 786px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 786px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 786px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 786px) and (min-resolution: 192dpi), screen and (min-width: 786px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero_bg_M@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url(../images/hero_bg_L.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero_bg_L@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .hero-titel {
+    width: 300px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero-titel {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-titel {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero,
