@@ -14,43 +14,73 @@
 
     transition: opacity 250ms var(--cubic),
         transform 250ms var(--cubic);
+    
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        z-index: 99;
+    }
 }
 
 .backdrobe.is-hidden {
     opacity: 0;
     transform: scale(0);
     pointer-events: none;
+
+   
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 528px;
-    height: 581px;
-
-    padding: 40px;
-
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    @media screen and (min-width: 320px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        width: 300px;
+        height: 609px;
+        
+        padding: 40px;
+        
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    background-color: var(--primary-white-color);
+        border-radius: 4px;
+        background-color: var(--primary-white-color);
+    }
+
+    @media screen and (min-width: 480px){          
+            width: 450px;
+            height: 609px;
+    }
+    @media screen and (min-width: 1200px) {
+            width: 528px;
+            height: 581px;
+    }
+
+   
 
 }
 
 .modal__title {
-    margin: 0;
-    margin-bottom: 30px;
-
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-
+    @media screen and (min-width: 320px) and (max-width:480px) {
+        margin: 0;
+        margin-bottom: 12px;
+        
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        
+        color: #212121;
+    }
+    @media screen and (min-width: 480px) {
     color: #212121;
+           font-size: 20px;
+     
+    }
+    @media screen and (min-width: 1200px) {
+           
+    }
 }
 
 // модалка кнопка закрить крестик
@@ -200,6 +230,8 @@
     &:checked+.modal__checkbox-icon {
         background-image: url(../images/check.svg);
         background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         background-origin: border-box;
         fill: var(--accent-color);
     }
@@ -210,8 +242,7 @@
 }
 
 .checkbox__lable {
-    display: flex;
-    align-items: center;
+    @extend %flex;
 
     font-size: 14px;
     line-height: 1.71;
@@ -223,12 +254,44 @@
 }
 
 .modal__agreement {
-    margin-bottom: 0;
+    @media screen and (min-width:320px){
+            font-size: 10px;
+            line-height: 1.16;
+            letter-spacing: 0.03em;
+            margin-bottom: 0;
+    }
+
+    @media screen and (min-width:480px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .modal__link {
-    margin-left: 5px;
-    color: var(--accent-color);
+    @media screen and (min-width:320px) {
+        font-size: 10px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: var(--accent-color);
+        margin-left: 5px;
+    }
+    
+    @media screen and (min-width:480px) {
+        font-size: 12px;
+        
+    }
+    
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+
+ 
 }
 
 .modal__input,

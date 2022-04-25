@@ -1,6 +1,6 @@
-.hero {
-    
-        
+
+
+.hero {          
         @media screen and (min-width: 320px) {
                max-width: 1600px;
                text-align: center;
@@ -10,31 +10,40 @@
                padding-top: 118px;
                padding-bottom: 118px;
                
-               background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), 
-               rgba(0, 0, 0, 0.4)), url(../images/hero_bg_S.jpg);
+               background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_bg_S.jpg);
+            background-color: var(--primary-text-color);
                background-repeat: no-repeat;
                background-position: center;
                background-size: cover;
 
                @include mq(retina) {
-                   background-image: url(../images/hero_bg_S@2x.jpg);
+                background-color: #2f303a;
+                   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_bg_S@2x.jpg);
                }
         }
            
      
-        @media screen and (min-width: 786px) {
-               background-image: url(../images/hero_bg_M.jpg);
+        @media screen and (min-width: 768px) {
+            
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero_bg_M@2x.jpg);
             @include mq(retina) {
-               background-image: url(../images/hero_bg_M@2x.jpg);
+            
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero_bg_M@2x.jpg);
             }
         }
 
         @media screen and (min-width: 1200px) {
             padding-top: 200px;
             padding-bottom: 200px;
-            background-image: url(../images/hero_bg_L.jpg);
+            background-color: #2f303a;
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero_bg_L@2x.jpg);
             @include mq(retina) {
-            background-image: url(../images/hero_bg_L@2x.jpg);
+                background-color: #2f303a;
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero_bg_L@2x.jpg);
             }
         }
 }
@@ -68,7 +77,8 @@
     }
 }
 
-.hero,
+
 .footer {
+    
     background-color: #2f303a;
 }

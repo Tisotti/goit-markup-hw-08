@@ -89,15 +89,12 @@
 
     &:first-child {
         padding-left: 0;
-        
     }
 
     &:last-child {
         padding-right: 0;
         border-right: none;
     }
-
-
 }
 
 .mob-social_list {
@@ -105,6 +102,6 @@
 
     @media screen and (min-width: 320px) and (max-width: 480px) {
        flex-wrap: wrap;
-    justify-content: center;
+       justify-content: center;
     }
 }

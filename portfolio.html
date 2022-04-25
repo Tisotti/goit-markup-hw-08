@@ -18,22 +18,41 @@
 
   <body class="body">
     <header class="header">
-      <div class="container main-nav">
-        <nav class="nav main-nav">
-          <a class="logo" href="index.html"
-            ><span class="logo-primary">Web</span
-            ><span class="logo-secondary">Studio</span></a
+      <div class="container header-nav">
+        <a class="logo" href="index.html"
+          ><span class="logo-primary">Web</span
+          ><span class="logo-secondary">Studio</span></a
+        >
+         <button
+            class="menu-btn"
+            type="button"
+            aria-expanded="false"
+            data-menu-button
           >
+        <nav class="nav">
+         
+            <svg
+              class="menu-btn_icon"
+              width="40px"
+              height="40px"
+              aria-label="переключатеть мобильного меню"
+            >
+              <use class="icon-cross" href="./images/icons.svg#close_40"></use>
+              <use class="icon-menu" href="./images/icons.svg#menu_40"></use>
+            </svg>
+          </button>
+
           <ul class="site-nav list">
             <li class="item">
-              <a class="nav-link" href="./index.html">Студия</a>
+              <a class="nav-link current" href="./index.html">Студия</a>
             </li>
             <li class="item">
-              <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+              <a class="nav-link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="item"><a class="nav-link" href="">Контакты</a></li>
           </ul>
         </nav>
+
         <ul class="nav-address list">
           <li class="item addres-item">
             <a
@@ -62,6 +81,7 @@
         </ul>
       </div>
     </header>
+
 
     <main>
       <h1 class="visually-hidden">наши работы</h1>
@@ -420,6 +440,82 @@
       </div>
     </footer>
 
+    <!-- мобильное окно -->
+    <div class="mobile-overlay" data-menu>
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <ul class="mob-nav_list list">
+            <li class="mob-nav_item">
+              <a class="nav-link" href="./index.html">Студия</a>
+            </li>
+            <li class="mob-nav_item">
+              <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-nav_item">
+              <a class="nav-link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-contacts">
+          <ul class="mob-contacts_list list">
+            <li class="mob-contacts_item">
+              <a class="mob-contacts_tel link" href="tel:+38 096 111 11 11"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-contacts_item">
+              <a class="mob-contacts_mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-social">
+          <ul class="mob-social_list list">
+            <li class="mob-social_item">
+              <a
+                class="mob-social_link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrel"
+              ></a
+              >Instagram
+            </li>
+            <li class="mob-social_item">
+              <a
+                class="mob-social_link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrel"
+              ></a
+              >Twitter
+            </li>
+            <li class="mob-social_item">
+              <a
+                class="mob-social_link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrel"
+              ></a
+              >Facebook
+            </li>
+            <li class="mob-social_item">
+              <a
+                class="mob-social_link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrel"
+              ></a
+              >LinkedIn
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
