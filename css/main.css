@@ -1744,9 +1744,15 @@ img {
 }
 
 .project-list {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .project-list {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .project-link {
