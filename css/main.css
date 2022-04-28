@@ -617,7 +617,6 @@ img {
 
 .container {
   outline: 1px solid red;
-  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -1733,6 +1732,16 @@ img {
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .projects {
+    flex-basis: calc(100% / 2 - 15px);
+    margin-left: -15px;
+    margin-top: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .projects {
     display: flex;
@@ -1749,6 +1758,14 @@ img {
 
 .project-list:last-child {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .project-list {
+    margin-left: 15px;
+    margin-top: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1816,11 +1833,23 @@ img {
   font-weight: 370px;
   padding-top: 20px;
   padding-left: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 56px;
   padding-right: 24px;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) {
+  .container-projects {
+    padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-projects {
+    padding-bottom: 20px;
+  }
 }
 
 .portfolio-title {
