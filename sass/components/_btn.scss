@@ -6,7 +6,6 @@
 
     display: inline-flex;
     margin: 0;
-    margin-top: 10px;
     margin-left: auto;
     padding: 0;
 
@@ -24,6 +23,8 @@
         fill: var(--accent-color);
     }
 }
+
+
 
 .menu-btn .icon-cross {
     display: none;

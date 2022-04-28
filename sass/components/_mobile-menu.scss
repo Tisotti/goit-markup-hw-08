@@ -51,7 +51,7 @@
 }
 
 .mob-nav_list {
-    margin-bottom: 302px;
+    margin-bottom: 30px;
 }
 
 .mob-contacts_tel {
@@ -78,30 +78,57 @@
 }
 
 .mob-social_item{
-    font-size: 18px;
-    line-height: 1.222;
-
-    padding-right: 10px;
-    padding-left: 10px;
-    
-    border-right:1px solid rgba(33, 33, 33, 0.2);
-    color: var(--accent-color);
-
-    &:first-child {
-        padding-left: 0;
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        font-size: 12px;
+        line-height: 1.222;
+        
+        padding-right: 5px;
+        padding-left: 5px;
+        
+        border-right:1px solid rgba(33, 33, 33, 0.2);
+        color: var(--accent-color);
+        
+        &:first-child {
+            padding-left: 0;
+        }
+        
+        &:last-child {
+            padding-right: 0;
+            border-right: none;
+        }
     }
 
-    &:last-child {
-        padding-right: 0;
-        border-right: none;
+    @media screen and (min-width: 480px) {
+        font-size: 18px;
+        line-height: 1.222;
+        
+        padding-right: 10px;
+        padding-left: 10px;
+        
+        border-right:1px solid rgba(33, 33, 33, 0.2);
+        color: var(--accent-color);
+        
+        &:first-child {
+            padding-left: 0;
+        }
+        
+        &:last-child {
+            padding-right: 0;
+            border-right: none;
+        }
+       
+    
+   
+   
     }
 }
 
 .mob-social_list {
     display: flex;
+ 
 
     @media screen and (min-width: 320px) and (max-width: 480px) {
        flex-wrap: wrap;
-       justify-content: center;
+       
     }
 }

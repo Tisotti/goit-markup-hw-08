@@ -10,19 +10,52 @@
     text-transform: uppercase;
 
     color: var(--primary-white-color);
+
+    @media screen and (min-width:320px) {
+        text-align: center;
+        display: inherit;
+       
+    }
+    
+    @media screen and (min-width:1200px) {
+        text-align: initial;
+    }
 }
 
 .subscribe-input {
+
+    @media screen and (min-width:320px) {
+            width: 100%;
+            padding: 15px 16px;
+
+            margin-bottom: 20px;
+            
+            @include border (rgba(255, 255, 255, 0.3));
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            
+            color: rgba(255, 255, 255, 0.6);
+            background-color: transparent;
+    }
+    
+    @media screen and (min-width:768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width:1200px) {
     width: 358px;
     height: 50px;
+    margin-bottom: 0px;
+    }
+}
 
-    padding: 15px 16px;
+.subscribe-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+}
 
-    @include border (rgba(255, 255, 255, 0.3));
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    color: rgba(255, 255, 255, 0.6);
-    background-color: transparent;
+.footer-form {
+    
 }

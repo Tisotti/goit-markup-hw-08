@@ -1,5 +1,17 @@
 @import "../utils/flex-placeholder";
 
+.connection {
+    @media screen and (min-width:320px) {
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    
+    @media screen and (min-width:1200px) {
+        text-align: initial;
+        padding-bottom: 0px;
+    }
+}
+
 .social {
     font-weight: 700;
     font-size: 14px;
@@ -7,6 +19,16 @@
     letter-spacing: 0.03em;
     color: #ffffff;
     margin-top: 0;
+
+    @media screen and (min-width:320px) {
+        
+        padding-bottom: 20px;
+    }
+    
+    @media screen and (min-width:1200px) {
+     
+        padding-bottom: 0px;
+    }
 }
 
 .social-list {

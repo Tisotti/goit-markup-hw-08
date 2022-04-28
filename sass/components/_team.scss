@@ -63,11 +63,31 @@
 
 
 .team-titel {
-    margin: 0;
-    padding: 0;
+ 
+    @media screen and (min-width: 320px) {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+        
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17;
+        
+        text-align: center;
+        letter-spacing: 0.03em;
+        
+        color: var(--titel-text-color);
+    }
 
-    margin-bottom: 50px;
-    text-align: center;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+
+        font-size: 36px;
+        line-height: 1.16;
+    }
+
+  
+   
 }
 
 .team-name {
