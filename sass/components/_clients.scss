@@ -38,16 +38,22 @@
 }
 
 .clients-list {
-    @media screen and (min-width: 320px) {
-        display: flex;
-        flex-wrap: wrap;
+ 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         list-style-type: none;
         padding: 0;
-        margin: 0;
+       
+
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+            margin: -15px;
+         
+        }
 
     @media screen and (min-width: 768px) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+       
     }
         
 
@@ -63,8 +69,8 @@
         justify-content: center;
         align-items: center;
         
-        width: 100%;
-        margin: 15px;    
+   
+    margin: 15px;
         
         @include border (#afb1b8);
         box-sizing: border-box;
@@ -78,6 +84,8 @@
         &:focus {
             border-color: var(--accent-color);
         }
+
+        
     
     @media screen and (min-width: 480px) {
         width: 210px;
@@ -118,7 +126,7 @@
     &:focus .clients-icon {
         fill: var(--accent-color);
     }
-}
+
 
 
 
