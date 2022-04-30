@@ -1480,11 +1480,14 @@ img {
   color: var(--primary-white-color);
 }
 
+.team {
+  background-color: #f5f4fa;
+}
+
 @media screen and (min-width: 480px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #f5f4fa;
   }
 }
 
@@ -1885,7 +1888,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .product-action {
-    padding: 63px 24px;
+    padding: 48px 24px 63px 24px;
     font-Size: 18px;
   }
 }
