@@ -102,18 +102,23 @@
 
     @extend %flex;
 
-    padding: 63px 24px;
-
+    padding: 33px 24px;
+    font-Size: 14px;
     top: 0;
     left: 0;
-
-    font-Size: 18px;
     Line-height: 1.55;
     letter-spacing: 0.03em;
 
     color: var(--primary-white-color);
 
     opacity: 0;
+
+
+    @media screen and (min-width: 768px) {
+        padding: 63px 24px;
+        font-Size: 18px;
+    }
+
 }
 
 
