@@ -1482,13 +1482,8 @@ img {
 
 .team {
   background-color: #f5f4fa;
-}
-
-@media screen and (min-width: 480px) {
-  .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1876,8 +1871,8 @@ img {
 
 .product-action {
   position: absolute;
-  padding: 33px 24px;
-  font-Size: 14px;
+  padding: 38px 24px;
+  font-Size: 16px;
   top: 0;
   left: 0;
   Line-height: 1.55;
