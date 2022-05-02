@@ -490,12 +490,6 @@ img {
   display: flex;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .mob-social_list {
-    flex-wrap: wrap;
-  }
-}
-
 .hero-btn, .modal__btn__submit, .subscribe-btn {
   font-weight: 700;
   font-size: 16px;
@@ -966,7 +960,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_bg_M@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_bg_M.jpg);
   }
 }
 
@@ -981,7 +975,7 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: #2f303a;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_bg_L@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_bg_L.jpg);
   }
 }
 
@@ -1055,18 +1049,21 @@ img {
   pointer-events: none;
 }
 
-@media screen and (min-width: 320px) {
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: var(--primary-white-color);
+}
+
+@media screen and (max-width: 479px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 609px;
-    padding: 40px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    background-color: var(--primary-white-color);
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
@@ -1540,6 +1537,7 @@ img {
 @media screen and (min-width: 1200px) {
   .team-item {
     margin-right: 30px;
+    height: initial;
   }
 }
 
@@ -1871,8 +1869,8 @@ img {
 
 .product-action {
   position: absolute;
-  padding: 38px 24px;
-  font-Size: 16px;
+  padding: 15px 24px;
+  font-Size: 15px;
   top: 0;
   left: 0;
   Line-height: 1.55;

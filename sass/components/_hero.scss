@@ -26,7 +26,7 @@
         @media screen and (min-width: 768px) {
             
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../images/hero_bg_M@2x.jpg);
+                url(../images/hero_bg_M.jpg);
             @include mq(retina) {
             
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -39,7 +39,7 @@
             padding-bottom: 200px;
             background-color: #2f303a;
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/hero_bg_L@2x.jpg);
+            url(../images/hero_bg_L.jpg);
             @include mq(retina) {
                 background-color: #2f303a;
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
